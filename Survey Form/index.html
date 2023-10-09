@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="form-group">
+
+            <!-- Form Heading -->
+            <h1>Survey Form</h1>
+
+            <!-- First Name Div -->
+            <div class="fname-div">
+                <label for="fname">First Name : </label>
+                <input type="text" name="fname" id="fname" placeholder="First Name" required>
+            </div>
+
+            <!-- Last Name Div -->
+            <div class="lname-div">
+                <label for="lname">Last Name :</label>
+                <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+            </div>
+
+            <!-- Gender Selection Div -->
+            <div class="gender-div">
+                <label>Gender : </label>
+                <div id="radio-btn-group">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <!-- Education Select Div -->
+            <div class="education-div">
+                <label for="edu">Education : </label>
+                <select name="education" id="edu">
+                    <option value=""> - Select -</option>
+                    <option value="primary">Primary School</option>
+                    <option value="secondary">Secondary School</option>
+                    <option value="higher">Higher School</option>
+                    <option value="bachelor">Bachelor Degree</option>
+                    <option value="masters">Masters Degree</option>
+                </select>
+            </div>
+
+            <!-- Skills Div -->
+            <div class="skills-div">
+                <label for="skills">Skills : </label>
+
+                <div id="skills-group">
+                    <input type="checkbox" name="front-dev" id="front-dev">
+                    <label for="front-dev">Front - End Dev</label>
+                </div>
+
+                <div id="skills-group">
+                    <input type="checkbox" name="front-dev" id="back-dev">
+                    <label for="back-dev">Back - End Dev</label>
+                </div>
+
+                <div id="skills-group">
+                    <input type="checkbox" name="front-dev" id="devops">
+                    <label for="devops">DevOps</label>
+                </div>
+
+                <div id="skills-group">
+                    <input type="checkbox" name="full-stack" id="full-stack">
+                    <label for="full-stack">Full Stack Dev</label>
+                </div>
+
+            </div>
+
+            <!-- More Information Div -->
+            <div class="long-text">
+                <label for="textarea">More Info :</label>
+                <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Enter Some Info...."></textarea>
+            </div>
+
+            <!-- Buttons Div -->
+            <div class="btn-group">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
